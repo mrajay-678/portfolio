@@ -1,52 +1,54 @@
 import React from "react";
 
+// Set the start date
+let startDate = new Date('2021-07-01');
+
+// Get the current date
+let currentDate = new Date();
+
+// Calculate the difference in years and months
+let yearsDiff = currentDate.getFullYear() - startDate.getFullYear();
+let monthsDiff = currentDate.getMonth() - startDate.getMonth();
+
+// Adjust the difference if the current month is before the start month
+if (currentDate.getMonth() < startDate.getMonth()) {
+  yearsDiff--;
+  monthsDiff += 12;
+}
+
 const About = () => {
     
   return (
     <>
-      <section className="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+      <section className="py-5 border-bottom fadeInUp">
         <h1 className="title pb-3 mb-5">About Me</h1>
         <p>
-          As a professional Frontend Developer with years of experience in
-          HTML/CSS3 (SASS), Bootstrap, JavaScript and jQuery (Data Table,
-          Amcharts 5, Date Rangepicker and Popovers), I have the expertise to
-          build responsive and user-friendly websites. Additionally, my
-          knowledge of GitLab further strengthens my ability to collaborate and
-          effectively manage version control. My skills in frontend development
-          extend beyond the basics. I am well-versed in the latest technologies
-          and trends in web development, which enable me to create complex
-          interactive designs using advanced techniques. Whether it is
-          developing optimised code, debugging, or testing, I am dedicated to
-          delivering the best possible outcome. If you are seeking an
-          experienced and skilled Frontend Developer, look no further. With my
-          fresh knowledge of ReactJS and expertise in other technologies, I am
-          ready to take on new challenges and effectively contribute to the
-          success of your projects. Let's collaborate and build something great
-          together!
+        Experienced frontend developer with 2 years of hands-on experience in HTML, CSS, Sass, Bootstrap, ES6, JavaScript,
+        jQuery, and 1 year of specialized knowledge in React. Proficient in creating visually appealing web pages, customizing
+        styles, and utilizing modern JavaScript features. Skilled in developing interactive user interfaces using React. A
+        valuable asset with a strong track record of 2 years in frontend development, delivering high-quality projects and
+        expertise in the mentioned technologies.
         </p>
         <div className="row mb-4">
           <div className="col-sm-6 py-1">
-            <span className="fw-medium text-primary">Name:</span> Ajay Tiwari
-          </div>
-          <div className="col-sm-6 py-1">
-            <span className="fw-medium text-primary">Birthday:</span> 08 November
+            <span className="fw-medium text-secondary">Birthday:</span> 08 November
             1998
           </div>
           <div className="col-sm-6 py-1">
-            <span className="fw-medium text-primary">Degree:</span> BscIT
+            <span className="fw-medium text-secondary">Degree:</span> BscIT
           </div>
           <div className="col-sm-6 py-1">
-            <span className="fw-medium text-primary">Experience:</span> 1.9 Years
+            <span className="fw-medium text-secondary">Experience:</span> {`${yearsDiff} Years and ${monthsDiff} Months`}
           </div>
           <div className="col-sm-6 py-1">
-            <span className="fw-medium text-primary">Phone:</span> +91 8828286629
+            <span className="fw-medium text-secondary">Phone:</span> +91 8828286629
           </div>
           <div className="col-sm-6 py-1">
-            <span className="fw-medium text-primary">Email:</span>
+            <span className="fw-medium text-secondary">Email:</span>
             theajay678@gmail.com
           </div>
           <div className="col-sm-6 py-1">
-            <span className="fw-medium text-primary">Address:</span> Bhayender,
+            <span className="fw-medium text-secondary">Address:</span> Bhayender,
             Thane 401 105, India
           </div>
         </div>
