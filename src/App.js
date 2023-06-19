@@ -3,6 +3,7 @@ import About from './Component/About';
 import Contact from './Component/Contact';
 import Expericence from './Component/Expericence';
 import Profile from './Component/Profile';
+import Testimonial from './Component/Testimonial';
 import Skills from './Component/Skills';
 import 'animate.css';
 
@@ -10,15 +11,16 @@ function App() {
   return (
     <>
       {/* <Spinner /> */}
-      <div className="container">
-        <div className="row g-5">
-          <div className="col-lg-4 sticky-lg-top py-3 vh-100">
+      <div className="container-outer">
+        <div className="container-inner">
+          <div className=" profile-card sticky-lg-top py-3 vh-100">
             <Profile />
           </div>
-          <div className="col-lg-8">
+          <div className="right-card">
             <About />
             <Skills/>
             <Expericence/>
+            <Testimonial/>
             <Contact/>
           </div>
         </div>

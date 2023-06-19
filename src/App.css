@@ -1,0 +1,51 @@
+/* custom cursor css start  */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+a {
+  font-family: Montserrat;
+  position: relative;
+  text-decoration: none;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 0px;
+  left: 0%;
+  background: white;
+  transition: width .3s ease;
+}
+
+a:hover:after{
+  width: 100%;
+  left: 0%;
+  background: white;
+}
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid white;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  transform: translate(calc(-50% + 15px), -50%);
+}
+
+.hover {
+  background-color: red;
+  opacity: 0.5;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+}
