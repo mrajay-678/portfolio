@@ -20,7 +20,7 @@ const Contact = () => {
               <div className="form-floating">
                 <input
                   type="text"
-                  className="form-control border-0 bg-secondary"
+                  className="form-control border-0 text-white"
                   id="name"
                   placeholder="Your Name"
                 />
@@ -31,7 +31,7 @@ const Contact = () => {
               <div className="form-floating">
                 <input
                   type="email"
-                  className="form-control border-0 bg-secondary"
+                  className="form-control border-0 text-white"
                   id="email"
                   placeholder="Your Email"
                   defaultValue={mail}
@@ -44,7 +44,7 @@ const Contact = () => {
               <div className="form-floating">
                 <input
                   type="text"
-                  className="form-control border-0 bg-secondary"
+                  className="form-control border-0 text-white"
                   id="subject"
                   placeholder="Subject"
                   defaultValue={subject}
@@ -56,7 +56,7 @@ const Contact = () => {
             <div className="col-12">
               <div className="form-floating">
                 <textarea
-                  className="form-control border-0 bg-secondary"
+                  className="form-control border-0 text-white"
                   placeholder="Leave a message here"
                   id="message"
                   style={{height: '200px'}}
@@ -68,7 +68,7 @@ const Contact = () => {
             </div>
             <div className="col-12">
                 <a id="send_mail" href= {`mailto:theajay678@gmail.com?subject=${subject}&body=${message}`}>     
-                    <span className="btn btn-primary w-100 py-3">Send Message</span>
+                    Send Message
                 </a>
             </div>
           </div>
