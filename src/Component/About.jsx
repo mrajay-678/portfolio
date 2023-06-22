@@ -31,24 +31,24 @@ const About = () => {
         </p>
         <div className="row mb-4">
           <div className="col-sm-6 py-1">
-            <span className="fw-medium text-secondary">Birthday:</span> 08 November
+            <span className="fw-bolder text-secondary">Birthday:</span> 08 November
             1998
           </div>
           <div className="col-sm-6 py-1">
-            <span className="fw-medium text-secondary">Degree:</span> BscIT
+            <span className="fw-bolder text-secondary">Degree:</span> BscIT
           </div>
           <div className="col-sm-6 py-1">
-            <span className="fw-medium text-secondary">Experience:</span> {`${yearsDiff} Years and ${monthsDiff} Months`}
+            <span className="fw-bolder text-secondary">Experience:</span> {`${yearsDiff} Years and ${monthsDiff} Months`}
           </div>
           <div className="col-sm-6 py-1">
-            <span className="fw-medium text-secondary">Phone:</span> +91 8828286629
+            <span className="fw-bolder text-secondary">Phone:</span> +91 8828286629
           </div>
           <div className="col-sm-6 py-1">
-            <span className="fw-medium text-secondary">Email:</span>
+            <span className="fw-bolder text-secondary">Email:</span>
             theajay678@gmail.com
           </div>
           <div className="col-sm-6 py-1">
-            <span className="fw-medium text-secondary">Address:</span> Bhayender,
+            <span className="fw-bolder text-secondary">Address:</span> Bhayender,
             Thane 401 105, India
           </div>
         </div>

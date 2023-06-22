@@ -14,7 +14,7 @@ function App() {
       {/* <Spinner /> */}
       <div className="container-outer">
         <div className="container-inner">
-          <div className=" profile-card sticky-md-top py-3 vh-md-100">
+          <div className=" profile-card sticky-md-top py-3">
             <Profile />
           </div>
           <div className="right-card">

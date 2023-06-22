@@ -3,9 +3,9 @@ import React from "react";
 const Profile = () => {
   return (
     <>
-      <div className="d-flex flex-md-column h-md-100 text-center overflow-auto side-card">
+      <div className="d-flex flex-md-column h-100 text-center overflow-auto side-card">
         <img
-          className="w-md-75 animate__bounceIn animate__animated profile-img img-fluid  my-2"
+          className="w-75 animate__bounceIn animate__animated profile-img img-fluid  my-2"
           src="img/profile.png"
           alt="Image"
         />
