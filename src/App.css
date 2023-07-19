@@ -1,0 +1,58 @@
+#send_mail {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-decoration: none;
+  padding: 0.75em 1em;
+  color: #1d2938;
+  border: 0.15em solid #1d2938;
+  border-radius: 12px;
+  transition: 4s;
+  width: 100%;
+  text-align: center;
+}
+#send_mail:before, #send_mail:after {
+  content: "";
+  position: absolute;
+  top: -1.5em;
+  z-index: -1;
+  width: 200%;
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 40%;
+  background-color: rgba(255, 255, 255, 0.25);
+  transition: 4s;
+}
+#send_mail:before {
+  left: -80%;
+  transform: translate3d(0, 5em, 0) rotate(-340deg);
+}
+#send_mail:after {
+  right: -80%;
+  transform: translate3d(0, 5em, 0) rotate(390deg);
+}
+#send_mail:hover, #send_mail:focus {
+  color: white;
+}
+#send_mail:hover:before, #send_mail:hover:after, #send_mail:focus:before, #send_mail:focus:after {
+  transform: none;
+  background-color: #1d2938;
+}
+
+.project-card-outer
+{
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  gap: 2%;
+}
+.project-card-outer div
+{
+  width: 49%;
+}
+.project-card-outer div img
+{
+  border-radius: 12px;
+  border: 1px solid #1d2938;
+}

@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+:root {
+  --primary: #00b87b;
+  --secondary: #314355;
+  --light: #f2f2f2;
+  --dark: #2c3e50;
+}
+body {
+  font-family:'Montserrat', sans-serif !important;
+  letter-spacing: 1px;
+  line-height: 20px !important;
+  background: #111828 !important;
+  font-weight: 400 !important;
+  line-height: 25px !important;
+  letter-spacing: 1.5px;
+  color: #ffffff !important;
+  text-align: left;
+  background-color: #fff;
+}
+body input ,body textarea
+{
+  background-color: #1b293a !important;
+}
+.container-outer
+{
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container-inner{
+  display: flex;
+  gap: 40px;
+}
+.profile-content .typed-text
+{
+  margin: 16px 0;
+}
+.profile-card{
+  width: 325px !important;
+  height: 100vh;
+}
+.right-card
+{
+  width: 975px !important;
+}
+.side-card {
+  background-color: #1d2938;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+.side-card img {
+  padding-top: 12px;
+  border-radius: 20px;
+}
+.side-card > * {
+  -webkit-animation-duration: calc(1s * 0.75);
+  animation-duration: calc(1s * 0.75);
+  -webkit-animation-duration: calc(var(--animate-duration) * 0.75);
+  animation-duration: calc(var(--animate-duration) * 0.75);
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+}
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #fff;
+}
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 100px;
+  border: 2px solid #fff;
+  width: 50px;
+}
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+/**datatable scrollbar css end**/
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.profile-img {
+  margin: 0 auto;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 600 !important;
+}
+.title {
+  position: relative;
+}
+
+.title::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  bottom: -4px;
+  left: 0;
+  border: 2px solid var(--light);
+  border-radius: 10px;
+}
+
+.title::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  bottom: 0;
+  left: 15px;
+  border-radius: 2px;
+  background: var(--light);
+}
+
+.flex-column::-webkit-scrollbar {
+  width: 4px;
+  height: 12px;
+}
+/* Track */
+.flex-column::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* Handle */
+.flex-column::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 100px;
+  border: 0px solid #fff;
+  width: 50px;
+}
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+body::-webkit-scrollbar {
+  width: 4px;
+  height: 12px;
+}
+/* Track */
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 100px;
+  border: 0px solid #fff;
+  width: 50px;
+}
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+body .border-bottom
+{
+  border-bottom: 1px solid var(--secondary) !important;
+}
+body .border-top
+{
+  border-top: 1px solid var(--secondary) !important;
+}
+body .border-end
+{
+  border-right: 1px solid var(--secondary) !important;
+}
+body .border-start
+{
+  border-left: 1px solid var(--secondary) !important;
+}
+a {
+  color: #fff !important;
+  text-decoration: none !important;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+@media (min-width: 768px) and (max-width:1300px) {
+  .container-outer
+  {
+    max-width: 100%;
+    width: 100%;
+    padding: 0px 24px;
+  }
+}
+@media (max-width:768px) {
+  .container-inner
+  {
+    display: block;
+  }
+  .side-card 
+  {
+    align-items: center;
+    flex-direction: column;
+  }
+  .profile-card
+  {
+    width: 100% !important;
+    height: 100%;
+
+  }
+  .profile-card img
+  {
+    width: 25% !important;
+    height: 50%;
+  }
+  .profile-content
+  {
+    width: 100%;
+  }
+
+  .right-card {
+    width: 100% !important;
+    padding: 0 24px;
+  }
+}
